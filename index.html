@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <h1>Encriptador e Desencriptador de texto</h1>
+        <section class="comeco">
+            <textarea id="texto-input" class="caixa-in" placeholder="Entrada"></textarea>
+            <div class="form-group">
+                <img src="img/!.jfif" class="img-alerta">
+                <label for=""input-texto>Apenas letras minusculas e sem acento</label>
+            </div>
+            <div class="botoes-div">
+                <button type="button" class="BotaoC" onclick="extrairTexto()">Criptografar</button>
+                <button type="button" class="BotaoD" onclick="extrairTextoDecriptado()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="fim">
+            <div id="div-aparece">
+                <textarea id="texto-output" class="caixa-out" placeholder="Saída"></textarea>
+                <button type="button" id="botaoCopiar" class="BotaoCopy" >copiar</button>
+            </div>  
+        </section>
+    </main>
+    <footer class="rodape">Criado por Kelvin</footer>
+    <script src="app.js"></script>
+</body>
+</html>
